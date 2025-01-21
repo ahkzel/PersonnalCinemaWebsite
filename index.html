@@ -1,61 +1,24 @@
 <html lang="fr">
     <head>
         <title>FilmSum</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-        <div id="MenuNav", class="MainMenu">
-            <nav class="bandeau-nav">
-                <ul class="menu-nav">
-                  <li class="item-nav"><span><a href="index.html">Accueil</a></span></li>
-                  <li class="item-nav"><span><a href="page2.html">Critiques Personnelles</a></span></li>
-                  <li class="item-nav"><span><a href="page3.html">Sites de Critique</a></span></li>
-                  <li class="item-nav"><span><a href="page4.html">Films du moment</a></span></li>
-                  <li class="item-nav"><span><a href="page5.html">Séries du moment</a></span></li>
-                </ul>
-            </nav>
+        <div class="entete">
             <h1 class="titre-page">Accueil</h1>
+            <button type="button" id="ThemeButton" class="ThemeButton" onclick="document.getElementById('ThemeButton').innerHTML = 'Thème sombre'">Thème clair</button>
         </div>
-        <a href="https://www.imdb.com/find/?q=gundam&ref_=nv_sr_sm" target="_blank">Page IMDB</a>
-        <hr>
-        <a href="https://www.senscritique.com" target="_blank">Page SensCritique</a>
-        <hr>
-        <a href="https://www.allocine.fr" target="_blank">Page AlloCiné</a>
-        <hr>
-        <a> <video src="assets/img/Wide Putin walking but he's always in frame (full version).mp4" width="100"></a>
-        <a> <img src="assets/img/balladur.png" height="500" width="1200"/></a>
-        <table>
-            <tr>
-                <td>Nom du porteur de bite</td>
-                <td>Nom de la bite</td>
-                <td>Taille de la BITE</td>
-                <td>Adresse de la BITE</td>
-                <td>Dickpick</td>
-            </tr>
-            <tr>
-                <td>Arthur</td>
-                <td>Excaliburne</td>
-                <td>1m20</td>
-                <td>jsp normandie ou quoi ?</td>
-                <td><a> <img src="assets/img/axel.webp" height="200"/></a></td>
-            </tr>
-            <tr>
-                <td>Roland</td>
-                <td>Durandal</td>
-                <td>1m46</td>
-                <td>c'était genre au pays basque espagnol un truc comme ça</td>
-                <td><a> <img src="assets/img/xddl.png" height="200"/></a></td>
-            </tr>
-            <tr>
-                <td>Damocles</td>
-                <td>sa grosse épée là</td>
-                <td>2m</td>
-                <td>rome ?</td>
-                <td><a> <img src="assets/img/playmobil 3.png" height="200"/></a></td>
-            </tr>
-        </table>
-        <hr>
-        <button type="button" id="ThemeButton" onclick="document.getElementById('ThemeButton').innerHTML = 'Thème sombre'">Thème clair</button>
+        <nav class="bandeau-nav">
+            <ul class="menu-nav">
+                <li class="item-nav"><span><a href="index.html">Accueil</a></span></li>
+                <li class="item-nav"><span><a href="page2.html">Critiques Personnelles</a></span></li>
+                <li class="item-nav"><span><a href="page3.html">Sites de Critique</a></span></li>
+                <li class="item-nav"><span><a href="page4.html">Films du moment</a></span></li>
+                <li class="item-nav"><span><a href="page5.html">Séries du moment</a></span></li>
+            </ul>
+        </nav>
+        <h2 class="formulaire">Formulaire</h2>
     </body>
 </html>
