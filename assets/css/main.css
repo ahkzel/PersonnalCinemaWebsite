@@ -1,6 +1,15 @@
 html{
-    background-image:url("pute.png");
-    font-family:"Georgia";
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
+    background-image: url("pute.png");
+    font-family: "Georgia";
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+.bandeau-nav{
+    font: "impact", "fantasy";
+    color: #144df1;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
 }
