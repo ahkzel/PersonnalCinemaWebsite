@@ -1,21 +1,52 @@
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>FilmSum</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
+
     <body>
-        <h1>Films du moment</h1>
-        <div id="MenuNav", class="MainMenu">
-            <nav class="bandeau-nav">
-                <ul class="menu-nav">
-                  <li class="name-nav"><span><a href="index.html">Accueil</a></span></li>
-                  <li class="name-nav"><span><a href="page2.html">Critiques Personnelles</a></span></li>
-                  <li class="name-nav"><span><a href="page3.html">Sites de Critique</a></span></li>
-                  <li class="name-nav"><span><a href="page4.html">Films du moment</a></span></li>
-                  <li class="name-nav"><span><a href="page5.html">Séries du moment</a></span></li>
-                </ul>
-              </nav>
+        <div id="page" class="flexboxmain">
+            <div class="bandeau-nav">
+                <nav>
+                    <div class="Menu">
+                        <i class="fas fa-bars"></i><span class="menu-txt">MENU</span>
+                    </div>
+                    <hr class="nav-separator">
+                    <ul class="menu-nav">
+                        <li class="item-nav">
+                            <a href="index.html"><i class="fa fa-chevron-right"></i><span>Accueil</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page2.html"><i class="fa fa-chevron-right"></i><span>Critiques Personnelles</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page3.html"><i class="fa fa-chevron-right"></i><span>Sites de Critique</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page4.html"><i class="fa fa-chevron-right"></i><span>Films du moment</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page5.html"><i class="fa fa-chevron-right"></i><span>Séries du moment</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="entete">
+                    <a href="index.html" class="nom-site">FilmSum</a>
+                    <a href="page4.html" class="titre-page">Films du moment</a>
+                    <div class="ThemeChanger">
+                        <button type="button" id="ThemeButton" class="ThemeButton" onclick="document.getElementById('ThemeButton').innerHTML = 'Thème sombre'">Thème clair</button>
+                    </div>
+                </div>
+                <div class="page-content">
+                    
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,64 +1,183 @@
 html{
-    font-family: "Georgia";
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 body{
-    margin:0;
+    margin: 0;
+    font-family: "trebuchet", sans-serif;
+    background: #ffffff;
 }
 
-a{
-    color:inherit;
-    text-decoration:none;
+#page .bandeau-nav{
+    background-color: #e5b918;
+    height: 100%;
+    width: 240px;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 0px;
 }
 
-a:visited{
-    color:inherit;
-    text-decoration:none;
-}
+#page .main{
+    position: relative;
+    width: calc(100% - 240px);
+    left: 240px
 
-.titre-page{
-    top:0;
 }
 
 .bandeau-nav{
-    height:100%;
-    width:240px;
-    left: 0px;
-    top: 0px;
-    display:flex;
-    flex-direction: column;
-    position: sticky;
+    border-right: 2px solid #b8b8b8;
+    z-index: 3;
 }
 
-.menu-nav{
-    list-style: none;
-    height:100%;
-    width:240px;
-    left: 0px;
-    justify-content: space-around;
+.bandeau-nav .Menu{
+    font-size: 30px;
+    font: 30px;
+    color: #ffffff;
+    width: 100%;
+    margin: 10px 10px 10px 10px; 
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.item-nav{
-    font: "impact", "fantasy";
-    font-size: 16px;
-    color: #144df1;
-    justify-content: space-around;
-    margin: 100;
+.menu-txt{
+    font-family: "Impact", monospace;
+    margin-right: 30px;
 }
 
-.item-nav:hover {
-    font-size: 18px;
-    transition: font-size 0.4s ease-out
+.menu-nav{
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    width: 240px;
+    left: 0;
+}
+
+.menu-nav .item-nav i{
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.menu-nav .item-nav:hover i{
+    transform: rotate(90deg);
+    transition: all 0.2s ease-out;
+}
+
+.bandeau-nav .item-nav{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 9px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.bandeau-nav .item-nav:hover{
+    font-size: 17px;
+    transform: translateX(8px);
+    background-color: #1843e5;
+    box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-out;
+}
+
+.bandeau-nav .item-nav > a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bandeau-nav .item-nav > a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bandeau-nav .nav-separator{
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 1px;
+    border: none;
+    background-color: #b2b2b2;
 }
 
 .entete{
-    top:0px;
-    display:flex;
-    position: sticky;
+    top: 0px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #e1e1e1;
+    border-bottom: 2px solid #e6c859;
     margin: 5 0;
+    align-items: center;
+}
+
+.entete > a{
+    color: #000000;
+}
+
+.nom-site{
+    display: flex;
+    position: relative;
+    font-family: "Impact";
+    font-size: 30px;
+    background-color: #b8b8b8;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    left: 60px;
+}
+
+.titre-page{
+    display: flex;
+    position: relative;
+    font-family: "Impact";
+    font-size: 30px;
+    background-color: #b8b8b8;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    left: 20%;
+}
+
+.ThemeChanger{
+    display: flex;
+    position: relative;
+    left: 60%;
+}
+
+.page-content{
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.pres-site{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid red;
+}
+
+.contact{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    border: 2px solid red;
+}
+
+.form-titre{
+
 }
 
 .formulaire{
