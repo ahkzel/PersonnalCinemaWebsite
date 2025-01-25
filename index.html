@@ -48,9 +48,49 @@
                         <p>TRUC</p>
                     </div>
                     <div class="contact">
-                        <div class="form-titre">Prise de contact</div>
-                        <form class="formulaire" action="https://qqch.fr">
-                            
+                        <form name="boîte de renseignement" class="formulaire" action="mailto:monadresse@messagerie.com" method="post" enctype="text/plain">
+                            <div class="form-entete">
+                                <p class="form-titre">Prise de contact</p><br>
+                            </div>
+                            <div class="form-main-content">
+                                <fieldset>
+                                    <legend class="form-category-title">Coordonées personnelles :</legend>
+                                    <div class="form-labels">
+                                        <label for="prénom">Prénom :</label><br>
+                                        <input class="form-input" id="prénom" name="prénom" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="nom">Nom :</label><br>
+                                        <input class="form-input" id="nom" name="nom" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="adresse">Adresse mail :</label><br>
+                                        <input class="form-input" id="adresse" name="adresse" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="ville" class="form-labels">Ville :</label><br>
+                                        <input class="form-input" id="name" name="ville" type="text" size="30">
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend class="form-category-title">Confidentialité :</legend>
+                                    <div class="form-labels">
+                                        <label for="nouvelles">Activer les nouvelles :</label><br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="donnees-obligatoires" checked="checked"/>Je comprends que mes données puissent être utilisées afin d'améliorer nos offres<br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="offres"/>Je souhaite recevoir des offres des partenaires<br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="newsletter"/>Je souhaite activer la newsletter<br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="cookies" class="form-labels">Activer les cookies :</label><br>
+                                        <input class="form-input" name="cookies" type="radio" value="Recevoir tout les cookies"/>Recevoir tout les cookies<br>
+                                        <input class="form-input" name="cookies" type="radio" value="Recevoir seulement les nécessaires"/>Recevoir seulement les nécessaires<br>
+                                    </div>
+                                </fieldset><br>
+                            </div>
+                            <fieldset class="submit-button">
+                                <button type="submit" id="submit-button" class="submit" name="submit">envoyer</button>
+                            </fieldset>
                         </form>
                     </div>
                 </div>

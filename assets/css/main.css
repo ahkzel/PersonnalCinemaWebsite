@@ -20,6 +20,7 @@ body{
 }
 
 #page .main{
+    display: flex;
     position: relative;
     width: calc(100% - 240px);
     left: 240px
@@ -131,6 +132,12 @@ body{
     left: 60px;
 }
 
+.nom-site:hover{
+    margin: 0 0 3px 0;
+    box-shadow: -7px 7px 0 0 rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-out;
+}
+
 .titre-page{
     display: flex;
     position: relative;
@@ -141,6 +148,12 @@ body{
     border-radius: 30px;
     border: 1px solid #ffffff;
     left: 20%;
+}
+
+.titre-page:hover{
+    margin: 0 0 3px 0;
+    box-shadow: -7px 7px 0 0 rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-out;
 }
 
 .ThemeChanger{
@@ -155,7 +168,6 @@ body{
     margin-top: 80px;
     width: 100%;
     height: 100%;
-    border: 2px solid red;
 }
 
 .pres-site{
@@ -170,17 +182,98 @@ body{
 .contact{
     display: flex;
     position: relative;
+    transform: translateY(50%);
     width: 50%;
     height: 100%;
     margin: 10px;
-    border: 2px solid red;
-}
-
-.form-titre{
-
 }
 
 .formulaire{
-    left: 0px;
     display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border: 1px solid #e6c859;
+    border-radius: 60px;
+}
+
+.form-entete{
+    display: flex;
+    position: relative;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    border: 1px solid #e6c859;
+    background-color: #e1e1e1;
+    align-items: center;
+    width: 100%;
+}
+
+.form-titre{
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    left: 40%;
+}
+
+.form-main-content{
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-main-content .form-category-title{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.form-main-content fieldset{
+    border: none;
+    margin: 20px 0 10px 0;
+}
+
+.form-main-content .form-labels{
+    font-size: 15px;
+    margin: 5px 0 10px 0;
+}
+
+.form-main-content .form-labels label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-main-content .form-input{
+    border-radius: 5px;
+}
+
+.form-main-content .form-input:hover{
+    background-color: #f0f0f0;
+}    
+
+.submit-button{
+    display: flex;
+    position: relative;
+    border: none;
+    margin: 0 auto 10px 40px;
+    border: none;
+}
+
+.submit{
+    border: none;
+    border-radius: 16px;
+    background-image: radial-gradient(#f3d257, #c39f19);
+    padding: 7px;
+}
+
+.submit:hover{
+    background-image: radial-gradient(#c39f19, #a48411);
+    padding: 8px;
+    box-shadow: -7px 7px 0 0 rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-in-out;
 }
