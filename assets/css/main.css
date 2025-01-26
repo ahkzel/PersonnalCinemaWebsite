@@ -6,10 +6,15 @@ html{
 body{
     margin: 0;
     font-family: "trebuchet", sans-serif;
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
-#page .bandeau-nav{
+body.dark-mode {
+    background-color: #292929;
+    color: #f6f6f6;
+}
+
+body #page .bandeau-nav{
     background-color: #e5b918;
     height: 100%;
     width: 240px;
@@ -17,6 +22,10 @@ body{
     position: fixed;
     left: 0px;
     top: 0px;
+}
+
+body.dark-mode #page .bandeau-nav {
+    background-color: #393939;
 }
 
 #page .main{
@@ -86,6 +95,10 @@ body{
     transition: all 0.2s ease-out;
 }
 
+body.dark-mode .bandeau-nav .item-nav:hover{
+    background-color: #5c2599;
+}
+
 .bandeau-nav .item-nav > a{
     color: #ffffff;
     text-decoration: none;
@@ -116,8 +129,17 @@ body{
     justify-content: space-between;
 }
 
+body.dark-mode .entete{
+    background-color: #1c1c1c;
+    border-bottom: 2px solid #8bd450;
+}
+
 .entete > a{
     color: #000000;
+}
+
+body.dark-mode .entete > a{
+    color: #f6f6f6;
 }
 
 .nom-site{
@@ -125,10 +147,15 @@ body{
     margin-left: 60px;
     font-family: "Impact";
     font-size: 30px;
-    background-color: #b8b8b8;
+    background-color: #e5b918;
     padding: 15px;
     border-radius: 30px;
-    border: 1px solid #ffffff;
+    border: none;
+}
+
+body.dark-mode .nom-site{
+    background-color: #5c2599;
+    border: none;
 }
 
 .nom-site:hover{
@@ -143,10 +170,15 @@ body{
     margin: 0 auto;
     font-family: "Impact";
     font-size: 30px;
-    background-color: #b8b8b8;
+    background-color: #e5b918;
     padding: 15px;
     border-radius: 30px;
-    border: 1px solid #ffffff;
+    border: none;
+}
+
+body.dark-mode .titre-page{
+    background-color: #5c2599;
+    border: none;
 }
 
 .titre-page:hover{
@@ -167,11 +199,23 @@ body{
     border: none;
 }
 
+body.dark-mode .theme-button{
+    background-color: #1c1c1c;
+    color: #f6f6f6;
+    border: none;
+}
+
 .theme-button:hover{
     background-image: radial-gradient(#dedede, #f9f9f9);
     padding: 7px;
     border-radius: 13px;
     transition: all 0.2s ease-in-out;
+}
+
+body.dark-mode .theme-button:hover{
+    text-decoration: underline;
+    background-image: none;
+    padding: 5px;
 }
 
 .page-content{
@@ -191,11 +235,23 @@ body{
     margin: 10px 10px 10px 20px;
 }
 
+.pres-site a{
+    text-decoration: none;
+}
+
+.pres-site a:hover{
+    text-decoration: underline;
+}
+
 .intro-site{
     background-color: #f5f5f5;
     border-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+body.dark-mode .intro-site{
+    background-image: radial-gradient(#20083b, #1c1c1c);
 }
 
 .titre-pres{
@@ -213,6 +269,10 @@ body{
     border-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+body.dark-mode .catalogue{
+    background-image: radial-gradient(#20083b, #1c1c1c);
 }
 
 .titre-catalogue{
@@ -249,6 +309,11 @@ body{
     border-radius: 60px;
 }
 
+body.dark-mode .formulaire{
+    background-image: radial-gradient(#20083b, #1c1c1c);
+    border: 1px solid #8bd450;
+}
+
 .form-entete{
     display: flex;
     position: relative;
@@ -258,6 +323,11 @@ body{
     background-color: #e1e1e1;
     align-items: center;
     width: 100%;
+}
+
+body.dark-mode .form-entete{
+    border: 1px solid #8bd450;
+    background-color: #130424;
 }
 
 .form-titre{
@@ -303,9 +373,17 @@ body{
     border-radius: 5px;
 }
 
+body.dark-mode .form-main-content .form-input{
+    background-color: #292929;
+}
+
 .form-main-content .form-input:hover{
     background-color: #f0f0f0;
-}    
+}
+
+body.dark-mode .form-main-content .form-input:hover{
+    background-color: #2e2e2e;
+}
 
 .submit-button{
     display: flex;
@@ -322,9 +400,40 @@ body{
     padding: 7px;
 }
 
+body.dark-mode .submit{
+    background-image: radial-gradient(#292929, #292929);
+    color: #f6f6f6;
+}
+
 .submit:hover{
     background-image: radial-gradient(#c39f19, #a48411);
     padding: 8px;
     box-shadow: -7px 7px 0 0 rgba(0, 0, 0, 1);
     transition: all 0.2s ease-in-out;
+}
+
+body.dark-mode .submit:hover{
+    background-image: radial-gradient(#5c2599, #5c2599);
+}
+
+.films-infos{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin: 20px 20px 20px 20px;
+    border: 2px solid red;
+}
+
+.rated-films{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin: 20px 20px 20px 20px;
+    border: 2px solid red;
+}
+
+.rated-films input{
+    width: 100%;
 }
