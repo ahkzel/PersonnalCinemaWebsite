@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
-    <body onload="load_saved_theme()">
+    <body>
         <div id="page" class="flexboxmain">
             <div class="bandeau-nav">
                 <nav>
@@ -39,15 +39,61 @@
                     <button type="button" id="theme-button" class="theme-button" onclick="change_theme()">Thème clair</button>
                 </div>
                 <div class="page-content">
-                    <div>
-                        <input id="name" type="text" spellcheck="false">
-                        <label for="name">Name</label>
+                    <div class="recherche-film">
+                        <h2 class="titre-pres">
+                            Vous recherchez une oeuvre ?
+                        </h2>
+                        <div class="recherche-core">
+                            <div class="recherche">
+                                <label for="oeuvre-name" class="recherche-label">Nom de l'oeuvre :</label>
+                                <input id="oeuvre-name" type="text" spellcheck="false">
+                                <button id="recherche-button" onclick="changeUrl()">Rechercher</button>
+                            </div>
+                            <table class="liens-sites">
+                                <tr class="entete-recherche-tableau">
+                                    <th>Nom du site de critique</th>
+                                    <th>Lien de la recherche</th>
+                                    <th>Icone du site</th>
+                                </tr>
+                                <tr>
+                                    <td class="site-nom">IMDB</td>
+                                    <td><a id="lienImdb" class="site-lien" href="https://www.imdb.com/fr/" target="_blank">Page IMDB</a></td>
+                                    <td class="logo-site">
+                                        <a href="https://www.imdb.com/fr/" target="_blank">
+                                            <img class="site-logo" src="assets/img/imdb.jpg">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="site-nom">SensCritique</td>
+                                    <td><a id="lienSenscritique" class="site-lien" href="https://www.senscritique.com" target="_blank">Page SensCritique</a></td>
+                                    <td class="logo-site">
+                                        <a href="https://www.senscritique.com" target="_blank">
+                                            <img class="site-logo" src="assets/img/senscritique.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="site-nom">AlloCiné</td>
+                                    <td><a id="lienAllocine" class="site-lien" href="https://www.allocine.fr" target="_blank">Page Allociné</a></td>
+                                    <td class="logo-site">
+                                        <a href="https://www.allocine.fr" target="_blank">
+                                            <img class="site-logo" src="assets/img/allocine.jpg">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="site-nom">IGN</td>
+                                    <td><a id="lienIgn" class="site-lien" href="https://fr.ign.com" target="_blank">Page IGN</a></td>
+                                    <td class="logo-site">
+                                        <a href="https://fr.ign.com" target="_blank">
+                                            <img class="site-logo" src="assets/img/ign.jpg">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <a href="https://www.imdb.com/find/?q=gundam&ref_=nv_sr_sm" target="_blank">Page IMDB</a>
-                    <hr>
-                    <a href="https://www.senscritique.com" target="_blank">Page SensCritique</a>
-                    <hr>
-                    <a href="https://www.allocine.fr" target="_blank">Page AlloCiné</a>
                 </div>
             </div>
         </div>
