@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
-    <body>
+    <body onload="load_saved_theme()">
         <div id="page" class="flexboxmain">
             <div class="bandeau-nav">
                 <nav>
@@ -21,16 +21,13 @@
                             <a href="index.html"><i class="fa fa-chevron-right"></i><span>Accueil</span></a>
                         </li>
                         <li class="item-nav">
-                            <a href="page2.html"><i class="fa fa-chevron-right"></i><span>Critiques Personnelles</span></a>
+                            <a href="externalSites.html"><i class="fa fa-chevron-right"></i><span>Sites de Critique</span></a>
                         </li>
                         <li class="item-nav">
-                            <a href="page3.html"><i class="fa fa-chevron-right"></i><span>Sites de Critique</span></a>
+                            <a href="filmsVedette.html"><i class="fa fa-chevron-right"></i><span>Films du moment</span></a>
                         </li>
                         <li class="item-nav">
-                            <a href="page4.html"><i class="fa fa-chevron-right"></i><span>Films du moment</span></a>
-                        </li>
-                        <li class="item-nav">
-                            <a href="page5.html"><i class="fa fa-chevron-right"></i><span>Séries du moment</span></a>
+                            <a href="seriesVedette.html"><i class="fa fa-chevron-right"></i><span>Séries du moment</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -38,21 +35,14 @@
             <div class="main">
                 <div class="entete">
                     <a href="index.html" class="nom-site">FilmSum</a>
-                    <a href="page3.html" class="titre-page">Sites de Critique</a>
-                    <button type="button" id="theme-button" class="theme-button" onclick="document.getElementById('theme-button').innerHTML = 'Thème sombre'">Thème clair</button>
+                    <a href="seriesVedette.html" class="titre-page">Séries du moment</a>
+                    <button type="button" id="theme-button" class="theme-button" onclick="change_theme()">Thème clair</button>
                 </div>
                 <div class="page-content">
-                    <div>
-                        <input id="name" type="text" spellcheck="false">
-                        <label for="name">Name</label>
-                    </div>
-                    <a href="https://www.imdb.com/find/?q=gundam&ref_=nv_sr_sm" target="_blank">Page IMDB</a>
-                    <hr>
-                    <a href="https://www.senscritique.com" target="_blank">Page SensCritique</a>
-                    <hr>
-                    <a href="https://www.allocine.fr" target="_blank">Page AlloCiné</a>
+                    
                 </div>
             </div>
         </div>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
