@@ -754,25 +754,3 @@ body.dark-mode .lien-series{
 .serie-image{
     width: 100%;
 }
-
-/* .films-infos{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 50%;
-    margin: 20px 20px 20px 20px;
-    border: 2px solid red;
-}
-
-.rated-films{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 50%;
-    margin: 20px 20px 20px 20px;
-    border: 2px solid red;
-}
-
-.rated-films input{
-    width: 100%;
-} */
