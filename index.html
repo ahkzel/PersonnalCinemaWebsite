@@ -1,61 +1,151 @@
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>FilmSum</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-        <h1>Accueil</h1>
-        <a href="https://www.imdb.com/find/?q=gundam&ref_=nv_sr_sm" target="_blank">Page IMDB</a>
-        <hr>
-        <a href="https://www.senscritique.com" target="_blank">Page SensCritique</a>
-        <hr>
-        <a href="https://www.allocine.fr" target="_blank">Page AlloCiné</a>
-        <hr>
-        <div id="MenuNav", class="MainMenu">
-            <nav class="bandeau-nav">
-                <ul class="side-nav">
-                  <li class="is-active"><span>Accueil</span></li>
-                  <li><span><a href="page2.html">Critiques Personnelles</a></span></li>
-                  <li><span><a href="page3.html">Sites de Critique</a></span></li>
-                  <li><span><a href="page4.html">Films du moment</a></span></li>
-                  <li><span><a href="page5.html">Séries du moment</a></span></li>
-                </ul>
-              </nav>
+        <div id="page" class="flexboxmain">
+            <div class="bandeau-nav">
+                <nav>
+                    <div class="Menu">
+                        <i class="fas fa-bars"></i><span class="menu-txt">MENU</span>
+                    </div>
+                    <hr class="nav-separator">
+                    <ul class="menu-nav">
+                        <li class="item-nav">
+                            <a href="index.html"><i class="fa fa-chevron-right"></i><span>Accueil</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page2.html"><i class="fa fa-chevron-right"></i><span>Critiques Personnelles</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page3.html"><i class="fa fa-chevron-right"></i><span>Sites de Critique</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page4.html"><i class="fa fa-chevron-right"></i><span>Films du moment</span></a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="page5.html"><i class="fa fa-chevron-right"></i><span>Séries du moment</span></a>
+                        </li>
+                        <hr class="nav-separator">
+                    </ul>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="entete">
+                    <a href="index.html" class="nom-site">FilmSum</a>
+                    <a href="index.html" class="titre-page">Accueil</a>
+                    <button type="button" id="theme-button" class="theme-button" onclick="document.getElementById('theme-button').innerHTML = 'Thème sombre'">Thème clair</button>
+                </div>
+                <div class="page-content">
+                    <div class="pres-site">
+                        <div class="intro-site">
+                            <h2 class="titre-pres">FilmSum: tout le cinéma en quelques clics.</h2>
+                            <p class="intro-core">
+                                FilmSum est un site web en ligne qui vous permet de consulter via
+                                le recoupement de données d'autres sites de critque toutes les informations
+                                en temps réel sur le meilleur du cinéma. Quoi regarder, les oeuvres à la une,
+                                les nouvelles du cinéma, les oeuvres les mieux notées, les acteurs du moment, 
+                                tout y est. Vous pouvez également vous créer vous même vos propres critiques de
+                                film dans notre rubrique <a href="page2.html">Critiques Personnelles</a> afin
+                                d'organiser vos idées et de les partager à des amis.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="catalogue">
+                            <h3 class="titre-catalogue">Nos fonctionnalités</h3>
+                            <div class="sum-page2">
+                                <h4 class="titre-rubrique">Critiques Personnelles</h4>
+                                <p class="pres-rubrique">
+                                    Dans notre rubrique <a href="page2.html">Critiques Personnelles</a>
+                                    vous pourrez créer votre propre liste de séries et films notés 
+                                    par vous-même et rangées automatiquement pour vous donner un aperçu
+                                    des oeuvres que vous avez préféré.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="sum-page3">
+                                <h4 class="titre-rubrique">Sites de Critique</h4>
+                                <p class="pres-rubrique">
+                                    Notre rubrique <a href="page3.html">Sites de Critique</a> rassemble,
+                                    comme son nom l'indique, de multiples sites de critiques sur le cinéma.
+                                    En entrant le nom d'une série ou d'un film dans cette rubrique vous aurez
+                                    directement accès aux résultats sur votre oeuvre, provenant de plusieurs
+                                    sites différents.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="sum-page4">
+                                <h4 class="titre-rubrique">Films du moment</h4>
+                                <p class="pres-rubrique">
+                                    Retrouvez les films les plus populaires du moment selon le public, avec plus
+                                    d'information si besoin via différents sites de critique, directement dans 
+                                    la rubrique <a href="page4.html">Films du moment</a>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="sum-page5">
+                                <h4 class="titre-rubrique">Séries du moment</h4>
+                                <p class="pres-rubrique">
+                                    Et retrouvez également les séries les plus populaires du moment selon le public
+                                    avec des informations complémentaires, directement dans la rubrique
+                                    <a href="page5.html">Séries du moment</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <form name="boîte de renseignement" class="formulaire" action="mailto:monadresse@messagerie.com" method="post" enctype="text/plain">
+                            <div class="form-entete">
+                                <p class="form-titre">Prise de contact</p><br>
+                            </div>
+                            <div class="form-main-content">
+                                <fieldset>
+                                    <legend class="form-category-title">Coordonées personnelles :</legend>
+                                    <div class="form-labels">
+                                        <label for="prénom">Prénom :</label><br>
+                                        <input class="form-input" id="prénom" name="prénom" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="nom">Nom :</label><br>
+                                        <input class="form-input" id="nom" name="nom" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="adresse">Adresse mail :</label><br>
+                                        <input class="form-input" id="adresse" name="adresse" type="text" size="30"><br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="ville" class="form-labels">Ville :</label><br>
+                                        <input class="form-input" id="name" name="ville" type="text" size="30">
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend class="form-category-title">Confidentialité :</legend>
+                                    <div class="form-labels">
+                                        <label for="nouvelles">Activer les nouvelles :</label><br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="donnees-obligatoires" checked="checked"/>Je comprends que mes données puissent être utilisées afin d'améliorer nos offres<br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="offres"/>Je souhaite recevoir des offres des partenaires<br>
+                                        <input class="form-input" name="nouvelles" type="checkbox" value="newsletter"/>Je souhaite activer la newsletter<br>
+                                    </div>
+                                    <div class="form-labels">
+                                        <label for="cookies" class="form-labels">Activer les cookies :</label><br>
+                                        <input class="form-input" name="cookies" type="radio" value="Recevoir tout les cookies"/>Recevoir tout les cookies<br>
+                                        <input class="form-input" name="cookies" type="radio" value="Recevoir seulement les nécessaires"/>Recevoir seulement les nécessaires<br>
+                                    </div>
+                                </fieldset><br>
+                            </div>
+                            <fieldset class="submit-button">
+                                <button type="submit" id="submit-button" class="submit" name="submit">envoyer</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a> <video src="assets/img/Wide Putin walking but he's always in frame (full version).mp4" width="100"></a>
-        <a> <img src="assets/img/balladur.png" height="500" width="1200"/></a>
-        <table>
-            <tr>
-                <td>Nom du porteur de bite</td>
-                <td>Nom de la bite</td>
-                <td>Taille de la BITE</td>
-                <td>Adresse de la BITE</td>
-                <td>Dickpick</td>
-            </tr>
-            <tr>
-                <td>Arthur</td>
-                <td>Excaliburne</td>
-                <td>1m20</td>
-                <td>jsp normandie ou quoi ?</td>
-                <td><a> <img src="assets/img/axel.webp" height="200"/></a></td>
-            </tr>
-            <tr>
-                <td>Roland</td>
-                <td>Durandal</td>
-                <td>1m46</td>
-                <td>c'était genre au pays basque espagnol un truc comme ça</td>
-                <td><a> <img src="assets/img/xddl.png" height="200"/></a></td>
-            </tr>
-            <tr>
-                <td>Damocles</td>
-                <td>sa grosse épée là</td>
-                <td>2m</td>
-                <td>rome ?</td>
-                <td><a> <img src="assets/img/playmobil 3.png" height="200"/></a></td>
-            </tr>
-        </table>
-        <hr>
-        <button type="button" id="ThemeButton" onclick="document.getElementById('ThemeButton').innerHTML = 'Thème sombre'">Thème clair</button>
     </body>
 </html>
