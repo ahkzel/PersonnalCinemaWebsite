@@ -657,6 +657,104 @@ body.dark-mode .lien-films{
     width: 100%;
 }
 
+.top-series{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .top-series{
+    background-color: #130424;
+}
+
+.top-series .titre-pres a{
+    text-decoration: none;
+}
+
+.top-series .titre-pres a:hover{
+    text-decoration: underline;
+}
+
+body.dark-mode .top-series .titre-pres a{
+    color: #f3d257;
+}
+
+.series-vedette{
+    height: calc(100% - 20px);
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-radius: 15px;
+    border: 1px solid #3d3d3d;
+}
+
+.series-vedette tr:nth-child(even){
+    background-color: #d6d6d6;
+}
+
+body.dark-mode .series-vedette tr:nth-child(even){
+    background-color: #393939;
+}
+
+body.dark-mode .series-vedette tr:nth-child(odd){
+    background-color: #292929;
+}
+
+.series-vedette th{
+    font-size: 18px;
+    padding: 18px;
+    background-color: #e5b918;
+    border: 1px solid #3d3d3d;
+}
+
+body.dark-mode .series-vedette th{
+    background-color: #202020;
+}
+
+.position{
+    width: 40px;
+}
+
+.serie-titre{
+    width: 300px;
+}
+
+.synopsis{
+    width: 45%;
+}
+
+.series-vedette td{
+    font-size: 18px;
+    padding: 15px;
+    margin-left: 10px;
+    border: 1px solid #3d3d3d;
+}
+
+.lien-series{
+    text-decoration: none;
+}
+
+.lien-series:hover{
+    text-decoration: underline;
+}
+
+body.dark-mode .lien-series{
+    color: #f3d257;
+}
+
+.serie-image{
+    width: 100%;
+}
+
 /* .films-infos{
     display: flex;
     position: relative;
