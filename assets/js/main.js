@@ -15,8 +15,6 @@ function load_saved_theme() {
 }
 
 function change_theme() {
-    load_saved_theme();
-    
     document.body.classList.toggle("dark-mode");
     
     if (document.body.classList.contains("dark-mode")) {
@@ -27,6 +25,8 @@ function change_theme() {
         localStorage.setItem("theme", "clair");
         document.getElementById("theme-button").textContent = "Thème clair";
     }
+
+    load_saved_theme();
 }
 
 function changeUrl(){
